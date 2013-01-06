@@ -1,0 +1,20 @@
+--- Introduction
+
+Downloads & search mobile stores for applications in Catalan language 
+
+--- Setting up
+
+* Download http://code.google.com/p/harvestman-crawler/
+
+
+--- Applications
+
+* builder.py -> Builds the translation memory: downloads files, merge them and builds the final memory
+
+* apply-tm.py -> Downloads a file and applies the translation memory and lists the files that gain more translations
+
+
+--- Contact Information
+
+Jordi Mas
+jmas@softcatala.org
