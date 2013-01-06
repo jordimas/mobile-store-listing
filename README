@@ -4,15 +4,18 @@ Downloads & search mobile stores for applications in Catalan language
 
 --- Setting up
 
-* Download http://code.google.com/p/harvestman-crawler/
+* Download Harvestman http://code.google.com/p/harvestman-crawler/
+* Install the system
 
+--- Running to download Apple Store
 
---- Applications
+harvestman -C harvestman_apple_cfg.xml (to download files)
+process_apple.py
 
-* builder.py -> Builds the translation memory: downloads files, merge them and builds the final memory
+outputs:
 
-* apply-tm.py -> Downloads a file and applies the translation memory and lists the files that gain more translations
-
+* urls.html -> Applications names and its url in html format
+* urls.wiki -> Applications names and its url in wiki format (ready to cut & paste to a Wiki)
 
 --- Contact Information
 
