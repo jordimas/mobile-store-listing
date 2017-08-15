@@ -32,8 +32,11 @@ class MySpider(CrawlSpider):
 
     def parse_item(self, response):
         # Apple stars returning 403 if you crawl too fast
-        time.sleep(0.05)
+        time.sleep(0.1)
         if 'Catalan' not in response.body:
+            return
+
+        if '/app/' not in response.url:
             return
 
         if not self.opened:
@@ -42,7 +45,6 @@ class MySpider(CrawlSpider):
 
         self.html_out.flush()
         num = randint(0, 9)
-
         
         filename = 'text-' + str(num) + '.log'
         f = open(filename, 'wb')
@@ -72,4 +74,4 @@ class MySpider(CrawlSpider):
                     self.html_out.write(name + rating + ": " + "<a href=" +url+">" + url + "<a><br/>\n")
 				
         		
-        os.remove(filename) 
+        os.remove(filename)
