@@ -32,7 +32,7 @@ class MySpider(CrawlSpider):
 
     def parse_item(self, response):
         # Apple stars returning 403 if you crawl too fast
-        time.sleep(0.1)
+        time.sleep(0.5)
         if 'Catalan' not in response.body:
             return
 
