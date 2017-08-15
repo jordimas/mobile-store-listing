@@ -8,10 +8,10 @@
 #     http://doc.scrapy.org/en/latest/topics/settings.html
 #
 
-BOT_NAME = 'play_store'
+BOT_NAME = 'apple_store'
 
-SPIDER_MODULES = ['play_store.spiders']
-NEWSPIDER_MODULE = 'play_store.spiders'
+SPIDER_MODULES = ['apple_store.spiders']
+NEWSPIDER_MODULE = 'apple_store.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'play_store (+http://www.yourdomain.com)'
